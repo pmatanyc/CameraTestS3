@@ -19,6 +19,12 @@
 		B292915319872D8100AB1E96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B292913B19872D8100AB1E96 /* UIKit.framework */; };
 		B292915B19872D8200AB1E96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B292915919872D8200AB1E96 /* InfoPlist.strings */; };
 		B292915D19872D8200AB1E96 /* PMCameraTestS3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B292915C19872D8200AB1E96 /* PMCameraTestS3Tests.m */; };
+		B292917219872FC900AB1E96 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = B292917119872FC900AB1E96 /* Constants.m */; };
+		B29291751987300700AB1E96 /* AmazonS3Util.m in Sources */ = {isa = PBXBuildFile; fileRef = B29291741987300700AB1E96 /* AmazonS3Util.m */; };
+		B29EA6C219874BFD00CD5641 /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29EA6C019874BFD00CD5641 /* AWSRuntime.framework */; };
+		B29EA6C319874BFD00CD5641 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29EA6C119874BFD00CD5641 /* AWSS3.framework */; };
+		B2FAC23B1987529900495FBF /* PMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FAC23A1987529900495FBF /* PMViewController.xib */; };
+		B2FAC23E198752B000495FBF /* PMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FAC23D198752B000495FBF /* PMViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,15 @@
 		B292915819872D8200AB1E96 /* PMCameraTestS3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PMCameraTestS3Tests-Info.plist"; sourceTree = "<group>"; };
 		B292915A19872D8200AB1E96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B292915C19872D8200AB1E96 /* PMCameraTestS3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMCameraTestS3Tests.m; sourceTree = "<group>"; };
+		B292917019872FC900AB1E96 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B292917119872FC900AB1E96 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		B29291731987300700AB1E96 /* AmazonS3Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonS3Util.h; sourceTree = "<group>"; };
+		B29291741987300700AB1E96 /* AmazonS3Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonS3Util.m; sourceTree = "<group>"; };
+		B29EA6C019874BFD00CD5641 /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSRuntime.framework; sourceTree = "<group>"; };
+		B29EA6C119874BFD00CD5641 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+		B2FAC23A1987529900495FBF /* PMViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMViewController.xib; sourceTree = "<group>"; };
+		B2FAC23C198752B000495FBF /* PMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMViewController.h; sourceTree = "<group>"; };
+		B2FAC23D198752B000495FBF /* PMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,8 @@
 				B292913A19872D8100AB1E96 /* CoreGraphics.framework in Frameworks */,
 				B292913C19872D8100AB1E96 /* UIKit.framework in Frameworks */,
 				B292913819872D8100AB1E96 /* Foundation.framework in Frameworks */,
+				B29EA6C219874BFD00CD5641 /* AWSRuntime.framework in Frameworks */,
+				B29EA6C319874BFD00CD5641 /* AWSS3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +94,8 @@
 		B292912B19872D8100AB1E96 = {
 			isa = PBXGroup;
 			children = (
+				B29EA6C019874BFD00CD5641 /* AWSRuntime.framework */,
+				B29EA6C119874BFD00CD5641 /* AWSS3.framework */,
 				B292913D19872D8100AB1E96 /* PMCameraTestS3 */,
 				B292915619872D8100AB1E96 /* PMCameraTestS3Tests */,
 				B292913619872D8100AB1E96 /* Frameworks */,
@@ -107,8 +126,15 @@
 		B292913D19872D8100AB1E96 /* PMCameraTestS3 */ = {
 			isa = PBXGroup;
 			children = (
+				B2FAC23C198752B000495FBF /* PMViewController.h */,
+				B2FAC23D198752B000495FBF /* PMViewController.m */,
+				B2FAC23A1987529900495FBF /* PMViewController.xib */,
 				B292914619872D8100AB1E96 /* PMAppDelegate.h */,
 				B292914719872D8100AB1E96 /* PMAppDelegate.m */,
+				B292917019872FC900AB1E96 /* Constants.h */,
+				B292917119872FC900AB1E96 /* Constants.m */,
+				B29291731987300700AB1E96 /* AmazonS3Util.h */,
+				B29291741987300700AB1E96 /* AmazonS3Util.m */,
 				B292914919872D8100AB1E96 /* Images.xcassets */,
 				B292913E19872D8100AB1E96 /* Supporting Files */,
 			);
@@ -219,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FAC23B1987529900495FBF /* PMViewController.xib in Resources */,
 				B292914219872D8100AB1E96 /* InfoPlist.strings in Resources */,
 				B292914A19872D8100AB1E96 /* Images.xcassets in Resources */,
 			);
@@ -239,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29291751987300700AB1E96 /* AmazonS3Util.m in Sources */,
 				B292914419872D8100AB1E96 /* main.m in Sources */,
 				B292914819872D8100AB1E96 /* PMAppDelegate.m in Sources */,
+				B292917219872FC900AB1E96 /* Constants.m in Sources */,
+				B2FAC23E198752B000495FBF /* PMViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,9 +389,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PMCameraTestS3",
+					"/Users/Paola/Downloads/aws-ios-sdk-2.0.5/third-party",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PMCameraTestS3/PMCameraTestS3-Prefix.pch";
 				INFOPLIST_FILE = "PMCameraTestS3/PMCameraTestS3-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -372,9 +409,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PMCameraTestS3",
+					"/Users/Paola/Downloads/aws-ios-sdk-2.0.5/third-party",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PMCameraTestS3/PMCameraTestS3-Prefix.pch";
 				INFOPLIST_FILE = "PMCameraTestS3/PMCameraTestS3-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,6 +483,7 @@
 				B292916219872D8200AB1E96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B292916319872D8200AB1E96 /* Build configuration list for PBXNativeTarget "PMCameraTestS3Tests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +492,7 @@
 				B292916519872D8200AB1E96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
